@@ -103,9 +103,8 @@ function Fire() {
             const scale = Math.PI / 3;
             const rotation = Math.PI / 6;
             return (
-              <g>
+              <g key={human.name}>
                 <ProfileCircle
-                  key={human.name}
                   person={human}
                   cx={Math.cos(idx * scale - rotation) * r + center}
                   cy={Math.sin(idx * scale - rotation) * r + center}

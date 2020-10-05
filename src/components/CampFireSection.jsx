@@ -13,20 +13,19 @@ const Gradient = styled.section`
   min-height: 100vh;
   height: 100%;
   color: white;
-  font-family: 'Nunito', "Comic Sans", sans-serif, Arial;
+  font-family: "Nunito", "Comic Sans", sans-serif, Arial;
 `;
 
-
 const CampFireSection = (props) => {
-  
-  return (<Gradient>
-      <h2 style={{'margin': 0, 'padding': '1em'}}>Campfire Stories!</h2>
+  return (
+    <Gradient>
+      <h2 style={{ margin: 0, padding: "1em" }}>Campfire Stories!</h2>
       <div className="container">
-      <Fire/>
-      <Footsteps/>
-
+        <Fire />
+        <Footsteps />
       </div>
-      </Gradient>);
+    </Gradient>
+  );
 };
 
 CampFireSection.propTypes = {};
